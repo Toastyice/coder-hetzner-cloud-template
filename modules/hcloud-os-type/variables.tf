@@ -34,12 +34,11 @@ variable "default" {
 variable "os_flavor" {
   description = "List of instance os flavors to include."
   type        = set(string)
-  default     = [
-    "ubuntu", #manatory or change default 
+  default = [
+    "ubuntu", #mandatory or change default 
     "debian",
     "fedora",
-    "alma",
-    "rocky"
+    "alma"
   ]
   validation {
     condition     = length(var.os_flavor) > 0

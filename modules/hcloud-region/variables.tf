@@ -19,12 +19,13 @@ variable "default" {
 variable "regions" {
   description = "List of hcloud regions to include."
   type        = list(string)
-  default     = [
+  default = [
     "fsn1",
     "nbg1",
     "hel1",
     "ash",
-    "hil"
+    "hil",
+    "sin"
   ]
 }
 

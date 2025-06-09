@@ -2,11 +2,11 @@ terraform {
   required_providers {
     coder = {
       source  = "coder/coder"
-      version = "0.21.0"
+      version = "2.5.3"
     }
     hcloud = {
       source  = "hetznercloud/hcloud"
-      version = "1.46.1"
+      version = "1.51.0"
     }
   }
 }

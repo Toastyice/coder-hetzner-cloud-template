@@ -45,3 +45,4 @@ write_files:
 runcmd:
   - chown ${username}:${username} /home/${username}
   - systemctl enable --now coder-agent
+  - resize2fs /dev/sdb

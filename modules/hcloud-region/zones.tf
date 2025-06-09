@@ -23,5 +23,10 @@ locals {
       name = "Hillsboro"
       icon = "/emojis/1f1fa-1f1f8.png"
     }
+    # Singapore
+    sin = {
+      name = "Singapore"
+      icon = "/emojis/1f1f8-1f1ec.png"
+    }
   }
 }

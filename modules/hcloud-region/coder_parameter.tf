@@ -12,7 +12,7 @@ data "coder_parameter" "region" {
       if anytrue([for d in var.regions : startswith(k, d)])
     }
     content {
-      icon = try(var.custom_icons[option.key], option.value.icon)
+      icon        = try(var.custom_icons[option.key], option.value.icon)
       name        = option.value.name
       description = option.key
       value       = option.key

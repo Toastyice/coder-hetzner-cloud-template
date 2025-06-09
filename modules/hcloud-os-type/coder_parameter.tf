@@ -12,8 +12,8 @@ data "coder_parameter" "os" {
       name  = replace(option.value, "-", " ")
       value = option.value
       # the icon for rocky and alma needs to have a linux appended
-      icon  = (
-        "/icon/${split("-", option.value)[0] == "alma" || split("-", option.value)[0] == "rocky" ? 
+      icon = (
+        "/icon/${split("-", option.value)[0] == "alma" || split("-", option.value)[0] == "rocky" ?
         "${split("-", option.value)[0]}linux" : split("-", option.value)[0]}.svg"
       )
     }

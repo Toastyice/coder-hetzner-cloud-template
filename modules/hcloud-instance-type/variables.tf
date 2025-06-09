@@ -34,7 +34,7 @@ variable "default" {
 variable "architecture" {
   description = "List of instance architectures to include."
   type        = set(string)
-  default     = [
+  default = [
     "arm",
     "x86"
   ]
@@ -47,7 +47,7 @@ variable "architecture" {
 variable "cpu_type" {
   description = "List of cpu types to include."
   type        = set(string)
-  default     = [
+  default = [
     "shared",
     "dedicated"
   ]
